@@ -1,3 +1,5 @@
-print("hello world")
-print ("What is your name?") n$
-print("Hello");n$
+print("Hello world!")
+20 CLS
+30 INPUT "What is your name?" n$
+40 PRINT
+50 PRINT "Hello "; n$
