@@ -5,9 +5,8 @@ from PIL import Image
 # file_types = [("JPEG (*.jpg)", "*.jpg"),
 #               ("All files (*.*)", "*.*")]
 def main():
-    img = sg.Image(key="-IMAGE-")
     layout = [
-        [img],
+        [sg.Image(key="-IMAGE-")],
 #         [
 #             sg.Text("Image File"),
 #             sg.Input(size=(25, 1), key="-FILE-"),
@@ -16,6 +15,7 @@ def main():
 #         ],
     ]
     window = sg.Window("Image Viewer", layout)
+    window.finalize()
     
     filename = "Dog.jpg"
     
@@ -24,8 +24,7 @@ def main():
         image.thumbnail((400, 400))
         bio = io.BytesIO()
         image.save(bio, format="PNG")
-#         window["-IMAGE-"].update(data=bio.getvalue())
-        img.update(data=bio.getvalue())
+        window["-IMAGE-"].update(data=bio.getvalue())
     else:
       raise Error("ERROR: NO FILE")
         
