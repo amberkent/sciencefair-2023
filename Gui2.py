@@ -19,7 +19,7 @@ def main():
     filename = "Dog.jpg"
     
     if os.path.exists(filename):
-        image = Image.open(values["-FILE-"])
+        image = Image.open(filename)
         image.thumbnail((400, 400))
         bio = io.BytesIO()
         image.save(bio, format="PNG")
