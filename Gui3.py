@@ -8,7 +8,7 @@ def main():
         [sg.Image(key="-IMAGE-")],
 
     ]
-    window = sg.Window("Image Viewer", layout, element_padding=(0,0))
+    window = sg.Window("Image Viewer", layout,  background_color='black',pad=(0, 0))
     window.finalize()
     
     filename = "Dog.jpg"
