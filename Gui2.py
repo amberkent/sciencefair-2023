@@ -14,7 +14,7 @@ def main():
 #             sg.Button("Load Image"),
 #         ],
     ]
-    window = sg.Window("Image Viewer", layout)
+    window = sg.Window("Image Viewer", layout, finalized=True)
     
     filename = "Dog.jpg"
     
