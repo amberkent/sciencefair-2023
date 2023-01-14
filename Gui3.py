@@ -5,10 +5,10 @@ from PIL import Image
 
 def main():
     layout = [
-        [sg.Image(key="-IMAGE-")],
+        [sg.Image(key="-IMAGE-"),background_color='black',  pad=(0, 0)],
 
     ]
-    window = sg.Window("Image Viewer", layout,  background_color='black',  pad=(0, 0))
+    window = sg.Window("Image Viewer", layout,)
     window.finalize()
     
     filename = "Dog.jpg"
