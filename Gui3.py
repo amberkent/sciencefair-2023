@@ -5,7 +5,7 @@ from PIL import Image
 
 def main():
     layout = [
-        [sg.Image(key="-IMAGE-"),background_color='black',  pad=(0, 0)],
+        [sg.Image(key="-IMAGE-", background_color='black', pad=(0, 0))],
 
     ]
     window = sg.Window("Image Viewer", layout,)
