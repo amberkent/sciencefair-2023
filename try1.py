@@ -2,7 +2,7 @@ import pyttsx3
 engine = pyttsx3.init()
 
 def MoreWater():
-    engine.say("Save me I'm drowning!")
+    engine.say("Hello I am the raspberry pi 3b.")
     engine.runAndWait()
 
 MoreWater()
