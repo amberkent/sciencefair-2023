@@ -1,3 +1,4 @@
 pyttsx3
 adafruit-circuitpython-seesaw
 PySimpleGUI
+adafruit-circuitpython-tsl2591
