@@ -1,8 +1,8 @@
 import pyttsx3
 engine = pyttsx3.init()
 
-def MoreWater():
-    engine.say("Dottie and Ben com herre.")
+def Speak(name):
+    engine.say("{}".format(name))
     engine.runAndWait()
 
-MoreWater()
+Speak("Save me I am drowning")
