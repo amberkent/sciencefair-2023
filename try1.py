@@ -1,8 +1,9 @@
 import pyttsx3
 engine = pyttsx3.init()
+import time
 
 def Speak(name):
-    time.sleep(1000)
+    time.sleep(3)
     engine.say("{}".format(name))
     engine.runAndWait()
 
