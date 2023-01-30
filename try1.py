@@ -6,4 +6,6 @@ def Speak(name):
     engine.say("{}".format(name))
     engine.runAndWait()
 
-Speak("Save me I am drowning")
+Speak("Save me I'm drowning.")
+
+Speak("I am scared of the dark.")
