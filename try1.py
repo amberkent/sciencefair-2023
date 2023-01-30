@@ -11,6 +11,6 @@ Speak("Save me I'm drowning.")
 
 Speak("I'm scared of the dark.")
 
-Speak("I'm having a drought.")
+Speak("Were having a drout over here.")
 
 Speak("It's a pristine day.")
