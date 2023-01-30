@@ -9,4 +9,8 @@ def Speak(name):
 
 Speak("Save me I'm drowning.")
 
-Speak("I am scared of the dark.")
+Speak("I'm scared of the dark.")
+
+Speak("I'm having a drought.")
+
+Speak("It's a pristine day.")
