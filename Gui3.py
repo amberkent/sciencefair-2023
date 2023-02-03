@@ -11,7 +11,7 @@ def main():
     window = sg.Window("Image Viewer", layout,)
     window.finalize()
     
-    filename = "Dog.jpg"
+    filename = "images/vampire.jpeg"
     
     if os.path.exists(filename):
         image = Image.open(filename)
