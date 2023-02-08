@@ -37,7 +37,7 @@ if __name__ == "__main__":
     perfect()
 
     import threading
-    th = threading.Thread(target=change_image, args=(,))
+    th = threading.Thread(target=change_image, args=())
     th.start()
     
     while True:
