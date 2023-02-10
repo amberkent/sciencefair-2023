@@ -22,6 +22,7 @@ def set_image(filename):
 
 def scuba():
   set_image("images/scuba.jpeg")
+  Speak("Save me I'm drowning.")
 
 def perfect():
   set_image("images/perfect.jpeg")
