@@ -36,9 +36,9 @@ def perfect():
   set_image("images/perfect.jpeg")
   Speak("It's a pristine day.")
     
- def perfect():
-  set_image("images/dry.jpeg")
-  Speak("It's a pristine day.")
+ def dry():
+  set_image("")
+  Speak("I'm in a drout over here.")
 
 
     
