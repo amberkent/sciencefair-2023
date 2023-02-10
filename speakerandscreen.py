@@ -36,11 +36,11 @@ def perfect():
   set_image("images/perfect.jpeg")
   Speak("It's a pristine day.")
     
- def dry():
+def dry():
   set_image(""images/dry.jpeg"")
   Speak("I'm in a drout over here.")
 
- def ():
+def ():
   set_image(""images/vampire.jpeg"")
   Speak("I'm scared of the dark.")
     
