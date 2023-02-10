@@ -42,7 +42,7 @@ def perfect():
 
  def ():
   set_image(""images/vampire.jpeg"")
-  Speak()
+  Speak("I'm scared of the dark.")
     
 def change_image():
   while True:
