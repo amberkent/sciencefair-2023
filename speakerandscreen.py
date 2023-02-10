@@ -3,7 +3,15 @@ import os
 import time
 import PySimpleGUI as sg
 from PIL import Image
+import pyttsx3
+engine = pyttsx3.init()
+import time
 
+def Speak(name):
+    time.sleep(3)
+    engine.say("{}".format(name))
+    engine.runAndWait()
+    
 layout = [
     [sg.Image(key="-IMAGE-", background_color='black', pad=(0, 0))],
 ]
