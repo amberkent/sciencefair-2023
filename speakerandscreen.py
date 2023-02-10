@@ -36,6 +36,12 @@ def perfect():
   set_image("images/perfect.jpeg")
   Speak("It's a pristine day.")
     
+ def perfect():
+  set_image("images/dry.jpeg")
+  Speak("It's a pristine day.")
+
+
+    
 def change_image():
   while True:
     time.sleep(3)
