@@ -41,8 +41,8 @@ def perfect():
   Speak("I'm in a drout over here.")
 
  def ():
-  set_image(""images/.jpeg"")
-  Speak("I'm in a drout over here.")
+  set_image(""images/vampire.jpeg"")
+  Speak()
     
 def change_image():
   while True:
