@@ -40,7 +40,7 @@ def dry():
   set_image(""images/dry.jpeg"")
   Speak("I'm in a drout over here.")
 
-def ():
+def vampire():
   set_image(""images/vampire.jpeg"")
   Speak("I'm scared of the dark.")
     
@@ -50,6 +50,10 @@ def change_image():
     scuba()
     time.sleep(3)
     perfect()
+    time.sleep(3)
+    vampire()
+    time.sleep(3)
+    dry()
     
 if __name__ == "__main__":
     perfect()
