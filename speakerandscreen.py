@@ -37,10 +37,12 @@ def perfect():
   Speak("It's a pristine day.")
     
  def dry():
-  set_image("")
+  set_image(""images/dry.jpeg"")
   Speak("I'm in a drout over here.")
 
-
+ def ():
+  set_image(""images/.jpeg"")
+  Speak("I'm in a drout over here.")
     
 def change_image():
   while True:
