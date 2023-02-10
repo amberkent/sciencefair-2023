@@ -26,6 +26,7 @@ def scuba():
 
 def perfect():
   set_image("images/perfect.jpeg")
+  Speak("It's a pristine day.")
     
 def change_image():
   while True:
