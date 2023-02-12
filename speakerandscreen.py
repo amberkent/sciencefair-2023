@@ -41,7 +41,7 @@ def dry():
   Speak("I'm in a drout over here.")
 
 def vampire():
-  set_image(""images/vampire.jpeg"")
+  set_image("images/vampire.jpeg")
   Speak("I'm scared of the dark.")
     
 def change_image():
