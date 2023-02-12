@@ -37,7 +37,7 @@ def perfect():
   Speak("It's a pristine day.")
     
 def dry():
-  set_image(""images/dry.jpeg"")
+  set_image("images/dry.jpeg")
   Speak("I'm in a drout over here.")
 
 def vampire():
