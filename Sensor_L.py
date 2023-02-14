@@ -11,7 +11,7 @@ sensor = adafruit_tsl2591.TSL2591(i2c)
 while True:
   
     lux = sensor.lux
-    print("Total light: {0}lux".format(lux)
+    print("Total light: {0}lux".format(lux))
     infrared = sensor.infrared
     print("Infrared light: {0}".format(infrared))
     visible = sensor.visible
