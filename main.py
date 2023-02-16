@@ -6,6 +6,12 @@ from PIL import Image
 import pyttsx3
 engine = pyttsx3.init()
 import time
+import time
+import board
+import adafruit_tsl2591
+i2c = board.I2C()  
+sensor = adafruit_tsl2591.TSL2591(i2c)
+
 
 def Speak(name):
     time.sleep(3)
@@ -27,6 +33,18 @@ def set_image(filename):
         window["-IMAGE-"].update(data=bio.getvalue())
     else:
       raise Error("ERROR: NO FILE")
+    
+def light_sensor():
+  
+    lux = sensor.lux
+    print("Total light: {0}lux".format(lux))
+    infrared = sensor.infrared
+    print("Infrared light: {0}".format(infrared))
+    visible = sensor.visible
+    print("Visible light: {0}".format(visible))
+    full_spectrum = sensor.full_spectrum
+    print("Full spectrum (IR + visible) light: {0}".format(full_spectrum))
+    time.sleep(1.0)
 
 def scuba():
   set_image("images/scuba.jpeg")
