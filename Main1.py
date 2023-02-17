@@ -91,7 +91,7 @@ if __name__ == "__main__":
     
 def vampire_main(): 
     light_sensor()
-    if light= >8000000:     
+    if light > 8000000:     
         vampire()
     
     vampire_main()
