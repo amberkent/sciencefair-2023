@@ -45,6 +45,7 @@ def light_sensor():
     full_spectrum = sensor.full_spectrum
     print("Full spectrum (IR + visible) light: {0}".format(full_spectrum))
     time.sleep(1.0)
+    return light
 
 def scuba():
   set_image("images/scuba.jpeg")
