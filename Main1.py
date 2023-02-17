@@ -90,7 +90,7 @@ if __name__ == "__main__":
     window.close()
     
 def vampire_main(): 
-    if light = > 8000000     
-    vampire()
+    if light = > 8000000:     
+        vampire()
     
     vampire_main()
