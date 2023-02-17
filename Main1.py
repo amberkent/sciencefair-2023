@@ -94,4 +94,4 @@ def vampire_main():
     if light > 8000000:     
         vampire()
     
-    vampire_main()
+        vampire_main()
