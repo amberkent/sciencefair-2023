@@ -90,6 +90,7 @@ if __name__ == "__main__":
     window.close()
     
 def vampire_main(): 
+    light_sensor()
     if light = >8000000:     
         vampire()
     
