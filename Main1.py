@@ -62,16 +62,16 @@ def vampire():
   set_image("images/vampire.jpeg")
   Speak("I'm scared of the dark.")
     
-def change_image():
-  while True:
-    time.sleep(3)
-    scuba()
-    time.sleep(3)
-    perfect()
-    time.sleep(3)
-    vampire()
-    time.sleep(3)
-    dry()
+#def change_image():
+ # while True:
+    #time.sleep(3)
+   # scuba()
+   # time.sleep(3)
+   # perfect()
+    #time.sleep(3)
+   # vampire()
+    #time.sleep(3)
+   # dry()
     
 if __name__ == "__main__":
     perfect()
