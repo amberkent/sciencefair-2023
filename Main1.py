@@ -91,6 +91,7 @@ def vampire():
     
 def vampire_main(): 
     light_sensor()
+    light=light_sensor()
     if light > 8000000:     
         vampire()
     
