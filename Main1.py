@@ -37,13 +37,9 @@ def set_image(filename):
 def light_sensor():
   
     lux = sensor.lux
-    print("Total light: {0}lux".format(lux))
     infrared = sensor.infrared
-    print("Infrared light: {0}".format(infrared))
     visible = sensor.visible
-    print("Visible light: {0}".format(visible))
     full_spectrum = sensor.full_spectrum
-    print("Full spectrum (IR + visible) light: {0}".format(full_spectrum))
     time.sleep(1.0)
     return full_spectrum
 
@@ -91,7 +87,7 @@ def vampire():
     
 def vampire_main(): 
     light_sensor()
-    light=light_sensor()
+    light= full_spectrum
     if light > 8000000:     
         vampire()
     
