@@ -42,6 +42,7 @@ def light_sensor():
     full_spectrum = sensor.full_spectrum
     time.sleep(1.0)
     return full_spectrum
+    light= full_spectrum
 
 def scuba():
   set_image("images/scuba.jpeg")
@@ -87,7 +88,6 @@ def vampire():
     
 def vampire_main(): 
     light_sensor()
-    light= full_spectrum
     if light > 8000000:     
         vampire()
     
