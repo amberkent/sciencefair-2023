@@ -86,8 +86,7 @@ def vampire():
 #             window.close()
     
 def vampire_main(): 
-    light_sensor()
-    light= full_spectrum
+    light=light_sensor()
     if light > 8000000:     
         vampire()
     
