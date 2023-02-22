@@ -81,8 +81,8 @@ def change_image():
         event, values = window.read()
 
         if event == "Exit" or event == sg.WIN_CLOSED:
-        break
-        window.close()
+            break
+            window.close()
     
 def vampire_main(): 
     light=light_sensor()
