@@ -70,14 +70,14 @@ def change_image():
      time.sleep(3)
      dry()
     
-    if __name__ == "__main__":
+   if __name__ == "__main__":
         perfect()
 
         import threading
         th = threading.Thread(target=change_image, args=())
         th.start()
     
-     while True:
+   while True:
         event, values = window.read()
 
         if event == "Exit" or event == sg.WIN_CLOSED:
