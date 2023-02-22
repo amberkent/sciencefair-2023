@@ -17,14 +17,13 @@ def Speak(name):
     time.sleep(3)
     engine.say("{}".format(name))
     engine.runAndWait()
-    
-layout = [
-    [sg.Image(key="-IMAGE-", background_color='black', pad=(0, 0))],
-]
-window = sg.Window("Image Viewer", layout,)
-window.finalize()
 
 def set_image(filename):
+    layout = [
+    [sg.Image(key="-IMAGE-", background_color='black', pad=(0, 0))],
+    ]
+    window = sg.Window("Image Viewer", layout,)
+    window.finalize()
     if os.path.exists(filename):
         image = Image.open(filename)
         image.thumbnail((400, 400))
