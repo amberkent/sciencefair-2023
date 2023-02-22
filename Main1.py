@@ -70,19 +70,19 @@ def change_image():
      time.sleep(3)
      dry()
     
- if __name__ == "__main__":
-     perfect()
+    if __name__ == "__main__":
+        perfect()
 
-     import threading
-     th = threading.Thread(target=change_image, args=())
-     th.start()
+        import threading
+        th = threading.Thread(target=change_image, args=())
+        th.start()
     
      while True:
-         event, values = window.read()
+        event, values = window.read()
 
         if event == "Exit" or event == sg.WIN_CLOSED:
         break
-           window.close()
+        window.close()
     
 def vampire_main(): 
     light=light_sensor()
