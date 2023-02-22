@@ -59,7 +59,7 @@ def vampire():
   set_image("images/vampire.jpeg")
   Speak("I'm scared of the dark.")
     
- def change_image():
+def change_image():
    while True:
      time.sleep(3)
      scuba()
