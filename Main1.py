@@ -18,12 +18,13 @@ def Speak(name):
     engine.say("{}".format(name))
     engine.runAndWait()
 
+layout = [
+  [sg.Image(key="-IMAGE-", background_color='black', pad=(0, 0))],
+]
+window = sg.Window("Image Viewer", layout,)
+window.finalize()
+
 def set_image(filename):
-    layout = [
-    [sg.Image(key="-IMAGE-", background_color='black', pad=(0, 0))],
-    ]
-    window = sg.Window("Image Viewer", layout,)
-    window.finalize()
     if os.path.exists(filename):
         image = Image.open(filename)
         image.thumbnail((400, 400))
@@ -36,10 +37,14 @@ def set_image(filename):
 def light_sensor():
   
     lux = sensor.lux
+    print("Total light: {0}lux".format(lux))
     infrared = sensor.infrared
+    print("Infrared light: {0}".format(infrared))
     visible = sensor.visible
+    print("Visible light: {0}".format(visible))
     full_spectrum = sensor.full_spectrum
-    time.sleep(1.0)
+    print("Full spectrum (IR + visible) light: {0}".format(full_spectrum))
+    # time.sleep(1.0)
     return full_spectrum
 
 def scuba():
@@ -81,7 +86,8 @@ if __name__ == "__main__":
 
         if event == "Exit" or event == sg.WIN_CLOSED:
             break
-            window.close()
+
+    window.close()
 
 # def vampire_main(): 
 #     light=light_sensor()
