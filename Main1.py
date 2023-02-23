@@ -59,33 +59,33 @@ def vampire():
   Speak("I'm scared of the dark.")
     
 def change_image():
-   while True:
-     time.sleep(3)
-     scuba()
-     time.sleep(3)
-     perfect()
-     time.sleep(3)
-     vampire()
-     time.sleep(3)
-     dry()
-    
-   if __name__ == "__main__":
+    while True:
+        time.sleep(3)
+        scuba()
+        time.sleep(3)
         perfect()
-
-        import threading
-        th = threading.Thread(target=change_image, args=())
-        th.start()
+        time.sleep(3)
+        vampire()
+        time.sleep(3)
+        dry()
     
-   while True:
+if __name__ == "__main__":
+    perfect()
+
+    import threading
+    th = threading.Thread(target=change_image, args=())
+    th.start()
+    
+    while True:
         event, values = window.read()
 
         if event == "Exit" or event == sg.WIN_CLOSED:
             break
             window.close()
+
+# def vampire_main(): 
+#     light=light_sensor()
+#     if light > 8000000:     
+#         vampire()
     
-def vampire_main(): 
-    light=light_sensor()
-    if light > 8000000:     
-        vampire()
-    
-vampire_main()
+# vampire_main()
