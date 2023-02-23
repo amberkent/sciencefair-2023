@@ -70,7 +70,9 @@ def change_image():
         time.sleep(3)
         perfect()
         time.sleep(3)
-        vampire()
+        light=light_sensor()
+        if light > 8000000: 
+            vampire()
         time.sleep(3)
         dry()
     
