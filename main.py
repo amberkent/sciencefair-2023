@@ -7,6 +7,7 @@ import pyttsx3
 engine = pyttsx3.init()
 import board
 import adafruit_tsl2591
+import datetime
 i2c = board.I2C()  
 sensor = adafruit_tsl2591.TSL2591(i2c)
 i2c = busio.I2C(board.SCL, board.SDA)
@@ -59,6 +60,7 @@ def scuba():
     Speak("Save me I'm drowning.")
 
 def vampire():
+    now = datetime.datetime.now()
   if chan_light.value > 17945
     set_image("images/vampire.jpeg")
     Speak("I'm scared of the dark.")
