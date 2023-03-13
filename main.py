@@ -49,48 +49,52 @@ def set_image(filename):
 #     print("Full spectrum (IR + visible) light: {0}".format(full_spectrum))
 #     time.sleep(1.0)
   
-def dry():
-  if chan_water.value = 21,393-21,800:
-    set_image("images/dry.jpeg")
-    Speak("I'm in a drout over here.")
-    
-def scuba():
-  if chan_water.value < 14634
-    set_image("images/scuba.jpeg")
-    Speak("Save me I'm drowning.")
+def main():
+   now = datetime.datetime.now()
 
-def vampire():
-    now = datetime.datetime.now()
-  if chan_light.value > 17945
-    set_image("images/vampire.jpeg")
-    Speak("I'm scared of the dark.")
-    
-def perfect():
-  set_image("images/perfect.jpeg")
-  Speak("It's a pristine day.")
-    
-def change_image():
-  while True:
-    time.sleep(3)
-    scuba()
-    time.sleep(3)
-    perfect()
-    time.sleep(3)
-    vampire()
-    time.sleep(3)
-    dry()
-    
-if __name__ == "__main__":
-    perfect()
+   while True:
+       if chan_water.value>21393 and chan_water.value <21800:
+           set_image("images/dry.jpeg")
+           Speak("I'm in a drout over here.")
 
-    import threading
-    th = threading.Thread(target=change_image, args=())
-    th.start()
+       elif chan_water.value > 14634:
+           set_image("images/scuba.jpeg")
+           Speak("Save me I'm drowning.")
+
+       elif(now.hour => 8 and  now.hour <= 18)and chan_light.value > 17945:
+           set_image("images/vampire.jpeg")
+           Speak("I'm scared of the dark.")
     
-    while True:
-        event, values = window.read()
+       else:
+           set_image("images/perfect.jpeg")
+           Speak("It's a pristine day.")
+    
+    time.sleep(3)
 
-        if event == "Exit" or event == sg.WIN_CLOSED:
-            break
+  def main():
+    
+# def change_image():
+#   while True:
+#     time.sleep(3)
+#     scuba()
+#     time.sleep(3)
+#     perfect()
+#     time.sleep(3)
+#     vampire()
+#     time.sleep(3)
+#     dry()
+    
+# if __name__ == "__main__":
+#     perfect()
 
-    window.close()
+#     import threading
+#     th = threading.Thread(target=change_image, args=())
+#     th.start()
+    
+#     while True:
+#         event, values = window.read()
+
+#         if event == "Exit" or event == sg.WIN_CLOSED:
+#             break
+
+#     window.close()
