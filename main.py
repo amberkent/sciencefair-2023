@@ -5,8 +5,6 @@ import PySimpleGUI as sg
 from PIL import Image
 import pyttsx3
 engine = pyttsx3.init()
-import time
-import time
 import board
 import adafruit_tsl2591
 i2c = board.I2C()  
