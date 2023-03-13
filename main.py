@@ -11,6 +11,10 @@ import board
 import adafruit_tsl2591
 i2c = board.I2C()  
 sensor = adafruit_tsl2591.TSL2591(i2c)
+i2c = busio.I2C(board.SCL, board.SDA)
+ads = ADS.ADS1115(i2c)
+chan_water = AnalogIn(ads, ADS.P0)
+chan_light = AnalogIn(ads, ADS.P2)
 
 
 def Speak(name):
@@ -34,33 +38,45 @@ def set_image(filename):
     else:
       raise Error("ERROR: NO FILE")
     
-def light_sensor():
+# def light_sensor():
   
-    lux = sensor.lux
-    print("Total light: {0}lux".format(lux))
-    infrared = sensor.infrared
-    print("Infrared light: {0}".format(infrared))
-    visible = sensor.visible
-    print("Visible light: {0}".format(visible))
-    full_spectrum = sensor.full_spectrum
-    print("Full spectrum (IR + visible) light: {0}".format(full_spectrum))
-    time.sleep(1.0)
-
+#     lux = sensor.lux
+#     print("Total light: {0}lux".format(lux))
+#     infrared = sensor.infrared
+#     print("Infrared light: {0}".format(infrared))
+#     visible = sensor.visible
+#     print("Visible light: {0}".format(visible))
+#     full_spectrum = sensor.full_spectrum
+#     print("Full spectrum (IR + visible) light: {0}".format(full_spectrum))
+#     time.sleep(1.0)
+  
+def dry():
+  if
+  set_image("images/dry.jpeg")
+  Speak("I'm in a drout over here.")
+    
 def scuba():
   set_image("images/scuba.jpeg")
   Speak("Save me I'm drowning.")
 
+def vampire():
+  set_image("images/vampire.jpeg")
+  Speak("I'm scared of the dark.")
+    
 def perfect():
   set_image("images/perfect.jpeg")
   Speak("It's a pristine day.")
     
-def dry():
-  set_image("images/dry.jpeg")
-  Speak("I'm in a drout over here.")
-
-def vampire():
-  set_image("images/vampire.jpeg")
-  Speak("I'm scared of the dark.")
+    
+    
+    
+        
+def sensor():
+while True:
+    print("water {:>5}\t{:>5.3f}".format(chan_water.value, chan_water.voltage))
+    time.sleep(0.5)
+    print("light {:>5}\t{:>5.3f}".format(chan_light.value, chan_light.voltage))
+    time.sleep(0.5)
     
 def change_image():
   while True:
