@@ -51,32 +51,23 @@ def set_image(filename):
 #     time.sleep(1.0)
   
 def dry():
-  if
-  set_image("images/dry.jpeg")
-  Speak("I'm in a drout over here.")
+  if chan_water.value = 21,393-21,800:
+    set_image("images/dry.jpeg")
+    Speak("I'm in a drout over here.")
     
 def scuba():
-  set_image("images/scuba.jpeg")
-  Speak("Save me I'm drowning.")
+  if chan_water.value < 14634
+    set_image("images/scuba.jpeg")
+    Speak("Save me I'm drowning.")
 
 def vampire():
-  set_image("images/vampire.jpeg")
-  Speak("I'm scared of the dark.")
+  if chan_light.value > 17945
+    set_image("images/vampire.jpeg")
+    Speak("I'm scared of the dark.")
     
 def perfect():
   set_image("images/perfect.jpeg")
   Speak("It's a pristine day.")
-    
-    
-    
-    
-        
-def sensor():
-while True:
-    print("water {:>5}\t{:>5.3f}".format(chan_water.value, chan_water.voltage))
-    time.sleep(0.5)
-    print("light {:>5}\t{:>5.3f}".format(chan_light.value, chan_light.voltage))
-    time.sleep(0.5)
     
 def change_image():
   while True:
