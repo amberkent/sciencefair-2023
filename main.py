@@ -52,7 +52,7 @@ def set_image(filename):
 #     print("Full spectrum (IR + visible) light: {0}".format(full_spectrum))
 #     time.sleep(1.0)
   
-def main():
+def do_it():
    now = datetime.datetime.now()
    while True:
        if chan_water.value >= 22297 :
@@ -73,30 +73,18 @@ def main():
     
    time.sleep(60)
 
-main()
-    
-# def change_image():
-#   while True:
-#     time.sleep(3)
-#     scuba()
-#     time.sleep(3)
-#     perfect()
-#     time.sleep(3)
-#     vampire()
-#     time.sleep(3)
-#     dry()
-    
-# if __name__ == "__main__":
-#     perfect()
 
-#     import threading
-#     th = threading.Thread(target=change_image, args=())
-#     th.start()
     
-#     while True:
-#         event, values = window.read()
+if __name__ == "__main__":
 
-#         if event == "Exit" or event == sg.WIN_CLOSED:
-#             break
+    import threading
+    th = threading.Thread(target=do_it, args=())
+    th.start()
+    
+    while True:
+        event, values = window.read()
 
-#     window.close()
+        if event == "Exit" or event == sg.WIN_CLOSED:
+            break
+
+    window.close()
