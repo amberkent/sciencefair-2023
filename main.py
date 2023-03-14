@@ -70,7 +70,7 @@ def main():
     
     time.sleep(60)
 
-  def main()
+main()
     
 # def change_image():
 #   while True:
