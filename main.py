@@ -51,13 +51,12 @@ def set_image(filename):
   
 def main():
    now = datetime.datetime.now()
-
    while True:
-       if chan_water.value>21393 and chan_water.value <21800:
+       if chan_water.value >= 22297 :
            set_image("images/dry.jpeg")
            Speak("I'm in a drout over here.")
 
-       elif chan_water.value > 14634:
+       elif chan_water.value <= 20349:
            set_image("images/scuba.jpeg")
            Speak("Save me I'm drowning.")
 
@@ -69,9 +68,9 @@ def main():
            set_image("images/perfect.jpeg")
            Speak("It's a pristine day.")
     
-    time.sleep(3)
+    time.sleep(60)
 
-  def main():
+  def main()
     
 # def change_image():
 #   while True:
