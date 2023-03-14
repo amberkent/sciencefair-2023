@@ -68,7 +68,7 @@ def main():
            set_image("images/perfect.jpeg")
            Speak("It's a pristine day.")
     
-    time.sleep(60)
+   time.sleep(60)
 
 main()
     
