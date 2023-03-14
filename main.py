@@ -60,7 +60,7 @@ def main():
            set_image("images/scuba.jpeg")
            Speak("Save me I'm drowning.")
 
-       elif(now.hour => 8 and  now.hour <= 18)and chan_light.value > 17945:
+       elif(now.hour => 8 and  now.hour <= 18)and chan_light.value >= 17945:
            set_image("images/vampire.jpeg")
            Speak("I'm scared of the dark.")
     
