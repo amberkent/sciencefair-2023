@@ -11,7 +11,7 @@ import busio
 import adafruit_tsl2591
 import adafruit_ads1x15.ads1115 as ADS		
 import datetime
-from adafruit_ads1x15.analog_in import AnalogI
+from adafruit_ads1x15.analog_in import AnalogIn
 i2c = board.I2C()  
 sensor = adafruit_tsl2591.TSL2591(i2c)
 i2c = busio.I2C(board.SCL, board.SDA)
