@@ -1,7 +1,7 @@
 import io
 import os 
 import cv2
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 import time
 import PySimpleGUI as sg
 from PIL import Image
