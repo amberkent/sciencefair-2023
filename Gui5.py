@@ -11,14 +11,14 @@ old_path = os.path.join(
                 values["-FOLDER-"], values["-FILE LIST-"][0]
             )
             #  read image using old_path
-            im = cv2.imread(old_path)
+im = cv2.imread(old_path)
             #  resize image to desired dimensions
-            im = cv2.resize(im,[1200,800])
+im = cv2.resize(im,[1200,800])
             # save image to temporary folder (new_path) as png
-            new_path ='temp_storage/image_to_show.png'
-            cv2.imwrite(new_path,im)
+new_path ='temp_storage/image_to_show.png'
+cv2.imwrite(new_path,im)
             # update window with new resized image
-            window["-IMAGE-"].update(new_path)
+window["-IMAGE-"].update(new_path)
 
  
 # scale_percent = 150 # percent of original size
