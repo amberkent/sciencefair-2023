@@ -7,10 +7,10 @@ import PySimpleGUI as sg
 from PIL import Image
 
 def scuba():
-    scale_percent = 150 # percent of original size
-    width = int(Image.py[1] * scale_percent / 200)
-    height = int(Image.py[1] * scale_percent / 150)
-    dim = (width, height)
+#     scale_percent = 150 # percent of original size
+#     width = int(Image.py[1] * scale_percent / 200)
+#     height = int(Image.py[1] * scale_percent / 150)
+#     dim = (width, height)
     layout = [
         [sg.Image(key="-IMAGE-", background_color='black', pad=(0, 0))],
 
@@ -37,7 +37,7 @@ def scuba():
             break
 
     window.close()
-if __name__ == "images/scuba.jpeg":
+# if __name__ == "images/scuba.jpeg":
     
     scuba()
     time.sleep(3)
@@ -68,7 +68,7 @@ def perfect():
             break
 
     window.close()
-if __name__ == "images/perfect.jpeg":
+# if __name__ == "images/perfect.jpeg":
     time.sleep(3)
     
     perfect()
