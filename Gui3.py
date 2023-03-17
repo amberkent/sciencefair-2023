@@ -7,6 +7,10 @@ import PySimpleGUI as sg
 from PIL import Image
 
 def scuba():
+    scale_percent = 150 # percent of original size
+    width = int(img.shape[1] * scale_percent / 200)
+    height = int(img.shape[0] * scale_percent / 150)
+    dim = (width, height)
     layout = [
         [sg.Image(key="-IMAGE-", background_color='black', pad=(0, 0))],
 
@@ -18,7 +22,7 @@ def scuba():
     
     if os.path.exists(filename):
         image = Image.open(filename)
-        image.thumbnail((800,480))
+#  image.thumbnail((800,480))
         cv2.resize(Image, (1200,960))
         bio = io.BytesIO()
         image.save(bio, format="PNG")
