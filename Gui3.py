@@ -37,10 +37,11 @@ def scuba():
             break
 
     window.close()
-# if __name__ == "images/scuba.jpeg":
+
+    if __name__ == "__main__":
     
-    scuba()
-    time.sleep(3)
+scuba()
+time.sleep(3)
     
 def perfect():
     layout = [
