@@ -2,7 +2,7 @@ import io
 import os 
 import time
 import PySimpleGUI as sg
-from PIL import Image
+import PIL.Image
 import cv2
 img = cv2.imread('/home/img/python.png', cv2.IMREAD_UNCHANGED)
 # resize image
