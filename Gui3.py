@@ -37,7 +37,7 @@ def scuba():
             break
 
     window.close()
-if __name__ == "__main__":
+if __name__ == "images/scuba.jpeg":
     
     scuba()
     time.sleep(3)
@@ -68,7 +68,7 @@ def perfect():
             break
 
     window.close()
-if __name__ == "__main__":
+if __name__ == "images/perfect.jpeg":
     time.sleep(3)
     
     perfect()
