@@ -40,7 +40,7 @@ def scuba():
 
     if __name__ == "__main__":
     
-scuba()
+    scuba()
 time.sleep(3)
     
 def perfect():
