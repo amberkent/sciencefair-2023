@@ -23,7 +23,7 @@ def scuba():
     if os.path.exists(filename):
         image = Image.open(filename)
 #  image.thumbnail((800,480))
-        cv2.resize(Image, (1200,960))
+        image = image.resize((1200,960))
         bio = io.BytesIO()
         image.save(bio, format="PNG")
         window["-IMAGE-"].update(data=bio.getvalue())
