@@ -54,7 +54,7 @@ def scuba():
             break
 
     window.close()
-if __name__ == "__main__":
+if __name__ == "images/scuba.jpeg":
     scuba()
     time.sleep(3)
     
