@@ -34,6 +34,7 @@ def scuba():
 
     window.close()
 if __name__ == "__main__":
+    
 scuba()
     time.sleep(3)
     
