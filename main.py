@@ -34,7 +34,7 @@ def set_image(filename):
     if os.path.exists(filename):
         image = Image.open(filename)
         image.thumbnail((400, 400))
-        image = image.resize((1375,1000))
+        image = image.resize((400,480))
         bio = io.BytesIO()
         image.save(bio, format="PNG")
         window["-IMAGE-"].update(data=bio.getvalue())
