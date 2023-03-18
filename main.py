@@ -34,7 +34,7 @@ def set_image(filename):
     if os.path.exists(filename):
         image = Image.open(filename)
         image.thumbnail((400, 400))
-        image = image.resize((800,400))
+        image = image.resize((750,400))
         bio = io.BytesIO()
         image.save(bio, format="PNG")
         window["-IMAGE-"].update(data=bio.getvalue())
@@ -72,7 +72,7 @@ def do_it():
            set_image("images/perfect.jpeg")
            Speak("It's a pristine day.")
     
-   time.sleep(60)
+   time.sleep(180)
 
 
     
