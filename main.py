@@ -72,7 +72,7 @@ def do_it():
            set_image("images/perfect.jpeg")
            Speak("It's a pristine day.")
     
-   time.sleep(360000000000)
+   time.sleep(3600000000000000)
 
 
     
